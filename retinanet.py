@@ -21,15 +21,15 @@ data = dict(
     train=dict(
         img_prefix='train/',
         classes=classes,
-        ann_file='train.json'),
+        ann_file='/home/s2258567/data/train.json'),
     val=dict(
         img_prefix='val/',
         classes=classes,
-        ann_file='val.json'),
+        ann_file='/home/s2258567/data/val.json'),
     test=dict(
         img_prefix='val/',
         classes=classes,
-        ann_file='val.json'))
+        ann_file='/home/s2258567/data/val.json'))
 
 # runtime
 runner = dict(type='EpochBasedRunner', max_epochs=25)
