@@ -10,7 +10,7 @@ _base_= '/home/s2258567/mmdetection/configs/retinanet/retinanet_x101_64x4d_fpn_m
 model = dict(
     pretrained = None,
     bbox_head=dict(num_classes=6),
-    backbone=dict(init_cfg=dict(type='Pretrained', checkpoint='/home/s2258567/models/retinanet_r101_fpn_mstrain_3x_coco_20210720_214650-7ee888e0.pth
+    backbone=dict(init_cfg=dict(type='Pretrained', checkpoint='/home/s2258567/models/retinanet_r101_fpn_mstrain_3x_coco_20210720_214650-7ee888e0.pth'))
     )
 checkpoint_config = dict(interval=5)
 # data setting
