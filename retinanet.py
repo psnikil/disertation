@@ -8,9 +8,11 @@ Created on Sat Jul  2 15:41:07 2022
 
 _base_= '/home/s2258567/mmdetection/configs/retinanet/retinanet_x101_64x4d_fpn_mstrain_640-800_3x_coco.py'
 model = dict(
-    bbox_head=dict(num_classes=6)
+    pretrained = None,
+    bbox_head=dict(num_classes=6),
+    backbone=dict(init_cfg=dict(type='Pretrained', checkpoint='open-mmlab://resnext101_64x4d'))
     )
-
+checkpoint_config = dict(interval=5)
 # data setting
 dataset_type = 'CocoDataset'
 data_root = '/home/s2258567/data/'
@@ -30,4 +32,5 @@ data = dict(
         ann_file='val.json'))
 
 # runtime
+runner = dict(type='EpochBasedRunner', max_epochs=25)
 #load_from = '/home/s2258567/models/retinanet_r101_fpn_mstrain_3x_coco_20210720_214650-7ee888e0.pth'
