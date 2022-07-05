@@ -30,4 +30,4 @@ data = dict(
         ann_file='val.json'))
 
 # runtime
-load_from = '/home/s2258567/models/retinanet_r101_fpn_mstrain_3x_coco_20210720_214650-7ee888e0.pth'
+#load_from = '/home/s2258567/models/retinanet_r101_fpn_mstrain_3x_coco_20210720_214650-7ee888e0.pth'
