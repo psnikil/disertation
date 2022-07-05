@@ -6,7 +6,7 @@ Created on Sat Jul  2 15:41:07 2022
 """
 
 
-_base_= '/home/s2258567/mmdetection/configs/retinanet/retinanet_x101_64x4d_fpn_mstrain_640-800_3x_coco.py '
+_base_= '/home/s2258567/mmdetection/configs/retinanet/retinanet_x101_64x4d_fpn_mstrain_640-800_3x_coco.py'
 model = dict(
     bbox_head=dict(num_classes=6)
     )
