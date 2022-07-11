@@ -9,7 +9,7 @@ _base_ = '/home/s2258567/mmdetection/configs/vfnet/vfnet_x101_64x4d_fpn_mdconv_c
 model = dict(
     pretrained = None,
     bbox_head=dict(num_classes=6),
-    backbone=dict(init_cfg=dict(type='Pretrained', checkpoint='/home/s2258567/work_dirs/vfnet_taco'))
+    backbone=dict(init_cfg=dict(type='Pretrained', checkpoint='/home/s2258567/work_dirs/vfnet_taco/latest.pth'))
     )
 
 # data setting
